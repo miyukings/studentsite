@@ -1,0 +1,23 @@
+body {
+    background: hotpink;
+    font-family: cora, sans-serif;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    font-family: miller-banner, serif;
+
+}
