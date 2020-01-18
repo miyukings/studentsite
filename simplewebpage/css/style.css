@@ -1,0 +1,22 @@
+body {
+    background: lightgray;
+    color: rgb(58, 58, 58);
+    text-align: left;
+    display: grid;
+    min-height: 100vh;
+   
+}
+
+h1 {
+    font-family: miller-banner, serif;
+ 
+}
+
+p {
+    font-family: cora, sans-serif;
+
+}
+
+a, span {
+    color: hotpink;
+}
