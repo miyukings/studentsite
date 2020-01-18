@@ -12,12 +12,14 @@ h1 {
     font-size: 60px;
     text-transform: uppercase;
     margin: 0;
-
+    text-decoration: none;
 }
 
 p {
     color: white;
     font-size: 24px;
     font-family: miller-banner, serif;
-
+}
+ a {
+    text-decoration: none;
 }
