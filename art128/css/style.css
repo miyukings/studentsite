@@ -10,6 +10,7 @@ body {
 
 h1 {
     font-size: 60px;
+    color: rgb(53, 52, 52);
     text-transform: uppercase;
     margin: 0;
     text-decoration: none;
@@ -22,4 +23,5 @@ p {
 }
  a {
     text-decoration: none;
+  
 }
