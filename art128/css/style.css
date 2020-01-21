@@ -1,14 +1,18 @@
 body {
     background: hotpink;
-    font-family: cora, sans-serif;
-    text-align: center;
+    color: rgb(58, 58, 58);
+    text-align: left;
     display: grid;
-    
+    min-height: 100vh;
    
     margin: 0;
 }
 
+.subpage {
+    background: #fff;
+}
 h1 {
+    font-family: miller-banner, serif;
     text-align: center;
     color: rgb(53, 52, 52);
     text-transform: uppercase;
@@ -23,10 +27,14 @@ ul li {
 p {
     color: white;
     font-size: 24px;
-    font-family: miller-banner, serif;
+    font-family: cora, sans-serif;
     text-align: left;
 }
  a {
     text-decoration: none;
     text-align: left;
+}
+
+a, span {
+    color: hotpink;
 }
