@@ -3,25 +3,30 @@ body {
     font-family: cora, sans-serif;
     text-align: center;
     display: grid;
-    align-content: center;
-    min-height: 100vh;
+    
+   
     margin: 0;
 }
 
 h1 {
-    font-size: 60px;
+    text-align: center;
     color: rgb(53, 52, 52);
     text-transform: uppercase;
-    margin: 0;
+    margin-top: 200px;
     text-decoration: none;
+}
+ul li {
+    text-align: left;
+    margin-top: 0;
 }
 
 p {
     color: white;
     font-size: 24px;
     font-family: miller-banner, serif;
+    text-align: left;
 }
  a {
     text-decoration: none;
-  
+    text-align: left;
 }
