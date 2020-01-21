@@ -1,0 +1,27 @@
+body {
+    background: #fff;
+    font-family: cora, sans-serif;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(53, 52, 52);
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    font-family: miller-banner, serif;
+}
+ a {
+    text-decoration: none;
+  
+}
