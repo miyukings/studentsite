@@ -1,5 +1,5 @@
 body {
-    background: hotpink;
+    background: white;
     color: rgb(58, 58, 58);
     text-align: left;
     display: grid;
@@ -8,9 +8,7 @@ body {
     margin: 0;
 }
 
-.subpage {
-    background: #fff;
-}
+
 h1 {
     font-family: miller-banner, serif;
     text-align: center;
@@ -19,13 +17,14 @@ h1 {
     margin-top: 200px;
     text-decoration: none;
 }
-ul li {
+ul ol li {
     text-align: left;
     margin-top: 0;
+    font-family:  cora, sans-serif;
 }
 
 p {
-    color: white;
+    color: rgb(53, 52, 52);
     font-size: 24px;
     font-family: cora, sans-serif;
     text-align: left;
@@ -37,4 +36,12 @@ p {
 
 a, span {
     color: hotpink;
+}
+
+.subpage {
+    background: #fff;
+}
+.subpage h1 h2 p li {
+    text-align: left;
+    
 }
