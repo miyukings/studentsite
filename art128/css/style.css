@@ -1,12 +1,24 @@
+
+
+
+
+/* GLOVAL RESETS */
+* {
+    box-sizing: border-box;
+}
 body {
-    background: white;
-    color: rgb(58, 58, 58);
-    text-align: left;
-    display: grid;
-    min-height: 100vh;
-   
     margin: 0;
 }
+
+/* GLOBAL COLORS */
+body {
+    background: rgb(252, 2, 127);
+    background-image: linear-gradient(to right,#f801ba, #fa90e3 );
+    color: rgb(58, 58, 58);
+  }
+  a {
+      color: rgba (0, 51, 102, 1);
+  }
 
 
 h1 {
