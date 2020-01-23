@@ -1,27 +1,211 @@
+
+
+
+
+/* GLOVAL RESETS */
+* {
+    box-sizing: border-box;
+}
 body {
-    background: #fff;
+    margin: 0;
+}
+
+/* GLOBAL COLORS */
+body  {
+    background: rgb(252, 2, 127);
+    background-image: linear-gradient(to bottom,#f801ba, #fa90e3 );
+    color: rgb(58, 58, 58);
+  }
+  a {
+      color: rgba (0, 51, 102, 1);
+  }
+
+/* GLOVAL TYPOGRAPHY */
+
+body {
     font-family: cora, sans-serif;
-    text-align: center;
-    display: grid;
-    align-content: center;
-    min-height: 100vh;
-    margin: 0;
-}
+    font-size: 88.75%;
 
-h1 {
-    font-size: 60px;
-    color: rgb(53, 52, 52);
-    text-transform: uppercase;
-    margin: 0;
+}
+h1,h2,h3,h4, {
+    font-weight: nomal;
+    font-family: miller-banner, serif
+}
+a {
     text-decoration: none;
+    color: gray;
 }
-
+a:hover {
+    text-decoration: none;
+    color: pink;
+}
 p {
-    color: white;
-    font-size: 24px;
-    font-family: miller-banner, serif;
+    max-width: 30em;
 }
- a {
-    text-decoration: none;
-  
+dt {
+    font-weight: bold;
+    margin-top: 1em;
 }
+
+/* GLOVAL MEDIA */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* GLOVAL LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* -------------SITE STRUCTURAL STYLES -------------- */
+body {
+color: rgba (255, 255, 255, 1);
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+/* SITE HEADER */
+.site-header {
+    padding: 1em;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
+.site-header a {
+    color: rgba(255, 255, 255, 1);
+}
+@media (min-width: 768px){
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* SITE ID */
+.site-id h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.25em;
+}
+
+/* SITE NAV */
+.site-nav ul,.site-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.25em 0 0 0;
+}
+.site-nav li a {
+display: block;
+padding: 0.5em 0.75em;
+}
+.site-main {
+    background-color: white;
+}
+main {
+    flex-grow: 1;
+}
+
+/* SITE FOOTER */
+.site-footer a {
+color: rgba(255, 255, 255, 1);
+}
+.social-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.social-nav a {
+    padding: 1em;
+}
+
+/* SECTIONS */
+section, aside {
+    padding: 2em 1em;
+}
+
+/* HERO */
+.hero {
+    max-width: none;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 2em 1em 4em 1em;
+}
+.hero h1, .hero h2 {
+    font-size: 4em;
+    line-height: 1;
+    margin: 0;
+}
+.hero p {
+    margin-left: auto;
+    margin-right: auto; 
+}
+.hero .running-head {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    margin: 1em 0;
+}
+
+/* SIDEBAR */
+@media (min-width: 768px){
+    .sidebar {
+        display: grid;
+        grid-template-columns: 21% 75%;
+    }
+.sidebar aside {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    margin: 2em 0;
+    padding: 0 1em 0 0;
+}}
+
+/* BOTTONS */
+.button {
+    display: inline-block;
+    padding: 1em;
+    background-color: rgba(0, 51, 103, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.button.light {
+    display: inline-block;
+    padding: 1em;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* CODE BLOCK */
+
+
+/* --------------PAGE-SPACIFIC STYLING --------------- */
+
+.page-home main {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.page-home .hero {
+    text-align: left;
+}
+.page-sub main {
+    background-color: white;
+    color: rgba(0,0,0,0.8);
+
+}
+
+ /* SIMPLE WEB SITE */
+ #simple-web {
+     background-color: #fff;
+ }

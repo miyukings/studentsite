@@ -11,7 +11,7 @@ body {
 }
 
 /* GLOBAL COLORS */
-body {
+body  {
     background: rgb(252, 2, 127);
     background-image: linear-gradient(to right,#f801ba, #fa90e3 );
     color: rgb(58, 58, 58);
@@ -196,39 +196,5 @@ section, aside {
     color: rgba(0,0,0,0.8);
 
 }
-h1 {
-    font-family: miller-banner, serif;
-    text-align: center;
-    color: rgb(53, 52, 52);
-    text-transform: uppercase;
-    margin-top: 200px;
-    text-decoration: none;
-}
-ul ol li {
-    text-align: left;
-    margin-top: 0;
-    font-family:  cora, sans-serif;
-}
 
-p {
-    color: rgb(53, 52, 52);
-    font-size: 24px;
-    font-family: cora, sans-serif;
-    text-align: left;
-}
- a {
-    text-decoration: none;
-    text-align: left;
-}
-
-a, span {
-    color: hotpink;
-}
-
-.subpage {
-    background: #fff;
-}
-.subpage h1 h2 p li {
-    text-align: left;
-    
-}
+ 
