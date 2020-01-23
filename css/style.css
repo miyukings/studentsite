@@ -181,7 +181,11 @@ section, aside {
     padding: 1em;
     background-color: transparent;
     border: 1px solid #fff;
+    border-radius: 30px;
     color: rgba(255, 255, 255, 1);
+}
+.button p {
+    margin: 0 auto;
 }
 
 /* CODE BLOCK */
@@ -209,3 +213,15 @@ section, aside {
  #simple-web {
      background-color: #fff;
  }
+ #simple-web span {
+    color: hotpink;
+}
+.subpage2 footer.site-footer {
+    background-color:rgb(252, 2, 127);
+}
+#simple-web a {
+    color: rgb(252, 2, 127)
+}
+#simple-web a:hover {
+    color: pink;
+}
