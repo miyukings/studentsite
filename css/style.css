@@ -1,10 +1,11 @@
 
-
-
-
 /* GLOVAL RESETS */
 * {
     box-sizing: border-box;
+   /* RESETS */
+    /* margin:0;
+    padding:0; 
+    border: 1px solid red; */
 }
 body {
     margin: 0;
@@ -27,7 +28,7 @@ body {
     font-size: 88.75%;
 
 }
-h1,h2,h3,h4, {
+ h2, h3, h4 {
     font-weight: nomal;
     font-family: miller-banner, serif;
 }
@@ -40,8 +41,9 @@ a:hover {
     color: pink;
 }
 p {
-    max-width: 30em;
+    max-width: 35em;
 }
+
 dt {
     font-weight: bold;
     margin-top: 1em;
@@ -220,8 +222,23 @@ section, aside {
     background-color:rgb(252, 2, 127);
 }
 #simple-web a {
-    color: rgb(252, 2, 127)
+    color: rgb(252, 2, 127);
 }
 #simple-web a:hover {
     color: pink;
+}
+#simple-web h1 {
+    font-size: 4em /* 48px / 16px= 3em */;
+    font-family:  miller-banner, serif;
+}
+#simple-web h2 {
+    font-size: 2.25em /* 36px / 16px= 2.25em */;
+}
+#simple-web h3 {
+    font-size: 1.5em /* 24px / 16px= 1.5em */;
+}
+
+/* PAGE SUB */
+.hero h3 {
+    font-size: 2em;
 }
