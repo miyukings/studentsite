@@ -29,7 +29,7 @@ body {
 }
 h1,h2,h3,h4, {
     font-weight: nomal;
-    font-family: miller-banner, serif
+    font-family: miller-banner, serif;
 }
 a {
     text-decoration: none;
