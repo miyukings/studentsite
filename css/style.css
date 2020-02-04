@@ -2,10 +2,6 @@
 /* GLOVAL RESETS */
 * {
     box-sizing: border-box;
-   /* RESETS */
-    /* margin:0;
-    padding:0; 
-    border: 1px solid red; */
 }
 body {
     margin: 0;
@@ -13,9 +9,11 @@ body {
 
 /* GLOBAL COLORS */
 body  {
-    background: rgb(252, 2, 127);
-    background-image: linear-gradient(to bottom,#f801ba, #fa90e3 );
-    color: rgb(58, 58, 58);
+    background: rgb(252, 2, 127); 
+    background-image: linear-gradient(to bottom,#f801ba, #fa90e3 ); 
+    color: rgb(58, 58, 58); 
+    /* background: rgba(0,0,0,1); */
+    /* color: #fff; */
   }
   a {
       color: rgba (0, 51, 102, 1);
@@ -25,7 +23,8 @@ body  {
 
 body {
     font-family: cora, sans-serif;
-    font-size: 88.75%;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
 
 }
  h2, h3, h4 {
@@ -90,7 +89,7 @@ min-height: 100vh;
 /* SITE ID */
 .site-id h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0.25em;
 }
 
