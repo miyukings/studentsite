@@ -43,12 +43,33 @@ p {
     max-width: 35em;
 }
 
+/* LAYOUT */
+body {
+    display: grid;
+   
+  
+}
+
 /* SITE STRUCTURE */
 .site-header {
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
+/* SITE NAV */
+
+.site-nav ul {
+    display: flex;
+    list-style: none;
+    /* margin: 0; */
+    padding: 0;
+}
+.site-nav a {
+    display: block;
+    padding: 1em;
+    /* border: 1px solid green; */
+}
 section.primary {
     background: white;
 }
@@ -58,3 +79,6 @@ section.primary {
     border: 1px solid black;
     
 } */
+.site-main ul {
+list-style: none;
+}
