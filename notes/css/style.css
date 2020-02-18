@@ -47,14 +47,21 @@ p {
 body {
     display: grid;
    
-  
 }
 
 /* SITE STRUCTURE */
 .site-header {
     display: flex;
     justify-content: space-between;
+    background-color: #f801ba;
+}
+
+.hero  {
     background-color: white;
+}
+.site-main {
+    background-color: white;
+
 }
 
 /* SITE NAV */
