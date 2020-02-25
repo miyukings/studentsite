@@ -54,11 +54,12 @@ body {
     line-height: 1.4;
     /* background-color: wheat; */
     color: rgb(59, 58, 58);
+    /* background-color: rgb(194, 47, 140); */
 
 }
  h1, h2, h3, h4,h5, h6 {
      margin: .5em 0;
-    font-weight: nomal;
+    font-weight: normal;
     font-family: miller-banner, serif;
 }
 
@@ -89,8 +90,8 @@ h6 {
 
 /* PARAGRAPHS */
 p {
-    margin: 0 0 0.5em 0;
-    max-width: 38em;
+  
+    max-width: 35em;
 }
 /* LINKS */
 h1 a {
@@ -173,18 +174,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOR LAYOUT DEMO */
 body.demo::before {
     background: red;
@@ -195,8 +184,6 @@ body.demo::before {
     padding: .2em;
     font-size: .8em;
 }
-
-
 
 
 @media (min-width:768px) {
@@ -223,6 +210,53 @@ body.demo::before {
     }
 }
 
+/* GRIG SYSTEM */
+.column {
+    margin-top: 1%;
+    margin-bottom: 1%;
+   
+}
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        margin-left: -1%;
+        margin-right: -1%;
+
+    }
+    .column {
+        flex-grow: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .one-whole { width: 100%}
+    .one-half { width: 48%}
+    .one-third { width: 31.333%}
+    .push-one-third { margin-left: 34.333%;}
+    .two-thirds { width: 64.6666%}
+    .one-fourth { width: 23%}
+    .push-one-fourth { margin-left: 26%;}
+    .push-one-half { margin-left: 51%;}
+    .push-one-third { margin-left: 34.333%;}
+    
+    .row.centered {justify-content: center;}
+    .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+/* FOR LAYOUT DEMO */
+.demo .column {
+    background: rgba(0, 0, 0, .2);
+    padding: .5em;
+    text-align: center;
+}
+
+.demo .column p {
+    max-width: none;
+}
 
 
 
