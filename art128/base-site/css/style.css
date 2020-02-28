@@ -1,33 +1,34 @@
 /* -------------------------
 CSS TABLE OF CONTENTS
 
-#GLOBALS
+# BASE CONTENT (GLOBALS)
   # RESET
   # COLORS
   # TYPOGRAPHY
         # BODY
         # HEADINGS
+        # PARAGRAPHS
         # LINKS
         # LISTS
         # BLOCK QUOTES
         # HELPERS
- #MEDIA
-   #IMAGEES
-#COMPORNENTS/UI ELEMENTS
-   #BUTTONS
-#BASE LAYOUT
-    #CONTENER
-    #MEDIA QUERIES
-    #GRID SYSTEM
+    # MEDIA
+        # IMAGEES (Responsive)
+    # COMPORNENTS/UI ELEMENTS
+        # BUTTONS
+# BASE LAYOUT
+    # CONTENER
+    # MEDIA QUERIES
+    # GRID SYSTEM
  # SITE STRUCTURE
-    #SITE HEADER
-        #SITE ID
-    #SITE MAIN
-    #SITE FOOTER
-    #SITE NAVIGATION
-        #TOGGLE NAV
-#SECTIONS
-#SUB PAGES
+    # SITE HEADER
+        # SITE ID
+    # SITE MAIN
+    # SITE FOOTER
+    # SITE NAVIGATION
+        # TOGGLE NAV
+# SECTIONS
+# SUB PAGES
 
 
     ------------------------ */
@@ -38,8 +39,14 @@ CSS TABLE OF CONTENTS
 
 
 /* TYPOGRAPHY */
-/* REFERENCE 
+body {
+    font-family: cora, sans-serif;
+    font-size: 100%; /* This sets the value of 1em */
+    line-height: 1.4;
+    color: rgb(59, 58, 58);
+}
 
+/* REFERENCE 
    62.5% => 10px
    68.8% => 11px
    62.5% => 10px
@@ -48,16 +55,8 @@ CSS TABLE OF CONTENTS
    62.5% => 10px
    62.5% => 10px */
 
-body {
-    font-family: cora, sans-serif;
-    font-size: 100%; /* This sets the value of 1em */
-    line-height: 1.4;
-    /* background-color: wheat; */
-    color: rgb(59, 58, 58);
-    /* background-color: rgb(194, 47, 140); */
-
-}
- h1, h2, h3, h4,h5, h6 {
+/* HEADINGS */
+ h1, h2, h3, h4, h5, h6 {
      margin: .5em 0;
     font-weight: normal;
     font-family: miller-banner, serif;
@@ -81,18 +80,16 @@ h4 {
 }
 h5 {
     font-size: 1.125em; /* 18px based on a 16px em */
- 
 }
 h6 {
-    font-size: 1em; /* 16px based on a 16px em */
-   
+    font-size: 1em; /* 16px based on a 16px em */ 
 }
 
 /* PARAGRAPHS */
 p {
-  
     max-width: 35em;
 }
+
 /* LINKS */
 h1 a {
     font-family: cora, sans-serif;
@@ -139,13 +136,13 @@ background-color:rgb(39, 23, 20);
     border: 1px solid rgb(39, 23, 20);
     }
 
-
+/* BASE LAYOUT */
 .container {
     max-width: 800px; /* NEED TO UPDATE */
     margin: 0 auto ; 
 }
 
-/* MEDIA QUERES */
+
 
 /* FOR SMALL-SIZE SCREEENS (and larger) */
 body {
@@ -156,6 +153,8 @@ body {
     margin: 0 auto;
     padding: 0 1em;
 }
+
+/* MEDIA QUERES */
   /* FOR MID-SIZE SCREEENS/TABLETS */
 @media (min-width:768px) {
    
