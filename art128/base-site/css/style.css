@@ -38,6 +38,7 @@ CSS TABLE OF CONTENTS
     * { box-sizing: border-box; }
 
 
+
 /* TYPOGRAPHY */
 body {
     font-family: cora, sans-serif;
@@ -46,14 +47,6 @@ body {
     color: rgb(59, 58, 58);
 }
 
-/* REFERENCE 
-   62.5% => 10px
-   68.8% => 11px
-   62.5% => 10px
-   62.5% => 10px
-   62.5% => 10px
-   62.5% => 10px
-   62.5% => 10px */
 
 /* HEADINGS */
  h1, h2, h3, h4, h5, h6 {
@@ -91,7 +84,7 @@ p {
 }
 
 /* LINKS */
-h1 a {
+h1 {
     font-family: cora, sans-serif;
 }
 
@@ -106,6 +99,7 @@ a:hover {
 
 /* BUTTON */
 .button,button {
+    font-size: 1em;
     display: inline-block;
     background-color:rgb(39, 23, 20);
     color: white;
@@ -121,9 +115,10 @@ button h4 {
     border-radius: 2em;
   
 }
-.button:hover {
+.button:hover, button:hover {
 color: pink;
 background-color:rgb(39, 23, 20);
+text-decoration: none;
 }
 .button.alt {
     background-color: transparent;
@@ -137,40 +132,73 @@ background-color:rgb(39, 23, 20);
     }
 
 /* BASE LAYOUT */
-.container {
-    max-width: 800px; /* NEED TO UPDATE */
-    margin: 0 auto ; 
-}
-
 
 
 /* FOR SMALL-SIZE SCREEENS (and larger) */
 body {
     font-size: 87.5%  /*  14px */ ;
-
 }
+
+/* CONTAINER */
 .container {
     margin: 0 auto;
     padding: 0 1em;
+    /* overflow-x: hidden; */
 }
 
 /* MEDIA QUERES */
   /* FOR MID-SIZE SCREEENS/TABLETS */
-@media (min-width:768px) {
-   
+@media (min-width:768px) {  
 }
+
  /* FOR LARGE-SIZED SCREEENS/LAPTOPS */
 @media (min-width:1000px) {
-   body {
-        font-size: 100%;
+   body { font-size: 100%; }
+        .container { max-width: 1000px; }
     }
-    }
+    
   /* FOR EXTRA-LARGE-SIZE SCREEENS/DESKTOP MONITORS */
 @media (min-width:1200px) {
-    body {
-        font-size: 112.5%;
+    body { font-size: 112.5%; }
+        .container { max-width: 1000px; }
+}
+
+/* GRID SYSTEM */
+.column {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+@media (min-width:768px) {  
+  .row {
+      display: flex;
+      margin-left: -1%;
+      margin-right: -1%;
+  }
+  .column {
+    flex-grow: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+    .one-whole { width: 100%}
+    .one-half { width: 48%}
+    .one-third { width: 31.333%}
+    .push-one-third { margin-left: 34.333%;}
+    .two-thirds { width: 64.6666%}
+    .one-fourth { width: 23%}
+    .push-one-fourth { margin-left: 26%;}
+    .push-one-half { margin-left: 51%;}
+    .push-one-third { margin-left: 34.333%;}
+
+    .row.centered {
+        justify-content: center;
+    }
+    .column.centered {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
 
 
 /* FOR LAYOUT DEMO */
@@ -209,44 +237,73 @@ body.demo::before {
     }
 }
 
-/* GRIG SYSTEM */
-.column {
-    margin-top: 1%;
-    margin-bottom: 1%;
+/* SITE STURCTURE */
+
+/* SITE HEADER */
+.site-header {
+    padding: 1em .5em;
+    background: pink;  
    
 }
 @media (min-width: 768px) {
-    .row {
+    .site-header .container {
         display: flex;
-        margin-left: -1%;
-        margin-right: -1%;
-
-    }
-    .column {
-        flex-grow: 0;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-    .one-whole { width: 100%}
-    .one-half { width: 48%}
-    .one-third { width: 31.333%}
-    .push-one-third { margin-left: 34.333%;}
-    .two-thirds { width: 64.6666%}
-    .one-fourth { width: 23%}
-    .push-one-fourth { margin-left: 26%;}
-    .push-one-half { margin-left: 51%;}
-    .push-one-third { margin-left: 34.333%;}
-    
-    .row.centered {justify-content: center;}
-    .column.centered {
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: space-between;      
     }
 }
 
 
 
-/* FOR LAYOUT DEMO */
+.site-header a {
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
+}
+.site-header a:hover {
+    color: rgba(0,0,0,1);
+}
+
+/* SITE ID (LOGO) */
+.site-id h1 {
+     font-size: 1.5em;
+     margin: 0;
+     text-align: center;
+}
+.site-id a {
+    display: block;
+    padding: .25em 0;
+}
+
+/* SITE NAV (Primary Top Nav) */
+.site-nav ul {
+    display: flex; 
+    justify-content: center;
+    margin: 0; 
+    padding: 0;
+}
+.site-nav li {
+    list-style: none;
+}
+.site-nav a {
+   display: block;
+   padding: .5em 1em;
+}
+/* SITE MAIN (Main Content Area) */
+.site-main { 
+
+}
+
+/* SITE FOOTER */
+.site-footer {
+
+}
+
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+
+
+/* FOR LAYOUT DEMO PURPOSES ONLY */
 .demo .column {
     background: rgba(0, 0, 0, .2);
     padding: .5em;
@@ -257,8 +314,44 @@ body.demo::before {
     max-width: none;
 }
 
+/* FOR SMALL-SIZED SCREENS (and Larger) */
+body.demo::before {
+    content: "Small Screen (0 - 767px)";
+    display: block;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: .2em;
+    font-size: .8em;
+}
+
+/* FOR MID-SIZED SCREENS (and Larger) */
+@media (min-width: 768px) {
+    body.demo::before {
+        content: "Mid Screen (768px - 999px)"; 
+        background: blue;  
+    }
+}
+
+/* FOR LARGE-SIZED SCREENS/LAPTOPS (and Larger) */
+@media (min-width: 1000px) {
+    body.demo::before {
+        content: "Large Screen (1000px - 1199px)"; 
+        background: green;  
+    }
+}
+
+/* FOR EXTRA LARGE-SIZED SCREENS/DESKTOP MONITOP (and Larger) */
+@media (min-width: 1200px) {
+    body.demo::before {
+        content: "ED-Large Screen (1000px - 1199px)"; 
+        background: green;  
+    }
+}
+
+
 /* FOR DEV TESTING ONLY */
-  /*  * {  
+ /* * {   
     background-color: rgb(255, 0, 0, .2);
     color:rgb(255, 0, 0, .2);
     box-shadow: 0 0 0 3px inset rgba(255, 0, 0, 1);
@@ -274,65 +367,8 @@ body.demo::before {
 .site-footer {
     background-color: rgb(255, 255, 0, 0.4);
     box-shadow: 0 0 0 3px inset rgba(255, 255, 0, 1);
- }  
+  }  */
 
-
-/* SITE STURCTURE */
-
-/* SITE HEADER */
-.site-header {
-    padding: 1em .5em;
-}
-@media (min-width: 768px) {
-    .site-header .container {
-        display: flex;
-        justify-content: space-between;      
-    }
-}
-.site-header .container {
-    display: flex;
-    justify-content: space-between;      
-}
-
-
-.site-header a {
-    color: rgba(0,0,0,1);
-    text-decoration: none;
-}
-.site-header a:hover {
-    color: rgba(0,0,0,.8);
-    text-decoration: none;
-}
-
-/* SITE ID (LOGO) */
-.site-id h1 {
-     font-size: 1.5em;
-     margin: 0;
-     text-align: center;
-}
-.site-id a {
-    display: block;
-    padding: .5em 0;
-}
-
-/* SITE NAV (Primary Top Nav) */
-.site-nav ul {
-    display: flex; 
-    justify-content: center;
-    margin: 0; 
-    padding: 0;
-}
-.site-nav li {
-    padding: 0 1em;
-    list-style: none;
-}
-.site-nav a {
-   display: block;
-   padding:  1em;
-}
-
-/* SITE ID (LOGO) */
-/* .site-main { }*/
 
 
 
