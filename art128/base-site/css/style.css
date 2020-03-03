@@ -96,12 +96,17 @@ a:hover {
     text-decoration: none;
     color:pink;
 }
+/* MEDIA */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* BUTTON */
 .button,button {
     font-size: 1em;
     display: inline-block;
-    background-color:rgb(39, 23, 20);
+    background-color:rgb(48, 45, 44);
     color: white;
     padding: 1em 2em;
     border-radius: 2em;
@@ -110,14 +115,14 @@ a:hover {
     line-height: 1;
     text-align: center;
 }
-button h4 {
+/* button h4 {
     font-family: cora, sans-serif;
     border-radius: 2em;
   
-}
+} */
 .button:hover, button:hover {
-color: pink;
-background-color:rgb(39, 23, 20);
+    color: rgb(146, 215, 223);
+background-color:rgb(48, 45, 44);
 text-decoration: none;
 }
 .button.alt {
@@ -126,7 +131,7 @@ text-decoration: none;
     border: 1px solid rgb(39, 23, 20);
 }
 .button.alt:hover {
-    color: pink;
+    color: rgb(146, 215, 223);
     background-color: transparent;
     border: 1px solid rgb(39, 23, 20);
     }
@@ -245,8 +250,8 @@ header.site-header {
 }
 
 .site-header {
-    padding: 1em .5em;
-    border-bottom: 1px solid #ccc;   
+    padding: 1em .5em 2em .5em; 
+   
 }
 
 
@@ -266,6 +271,10 @@ header.site-header {
 .site-footer a:hover {
     color: rgb(146, 215, 223);
 }
+/* SITE FOOTER */
+.site-footer {
+  padding: 1em .5em 2em .5em; 
+} 
 
 /* SITE ID (LOGO) */
 .site-id h1 {
@@ -283,6 +292,7 @@ header.site-header {
 .site-nav ul {
     display: flex; 
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0; 
     padding: 0;
 }
@@ -296,20 +306,30 @@ header.site-header {
 
 /* SITE MAIN (Main Content Area) */
 main.site-main {
-    background: lightgray;
 }
-.site-main p {
-  margin: 0 auto;
+/* SECTION */
+section {
+    padding: 4em 0;
 }
-.hero h1 {
-    display: flex;
-    justify-content: center;
+.hero {
+    text-align: center;
+    background: rgba(0,0,0,.1);
+}
+
+.hero h2 {
+    font-size: 3em;
+    line-height: 1;
+}
+.hero p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 
 
-/* SITE FOOTER */
-/* .site-footer {} */
+
+
 
 
 
