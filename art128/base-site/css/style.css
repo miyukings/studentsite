@@ -246,22 +246,24 @@ header.site-header {
 
 .site-header {
     padding: 1em .5em;
-     
-   
+    border-bottom: 1px solid #ccc;   
 }
+
+
 @media (min-width: 768px) {
     header.site-header {
         display: flex;
-        justify-content: space-between; 
-       
+        justify-content: space-between;   
     }
 }
 
-.site-header a {
+.site-header a,
+.site-footer a {
     color: rgba(83, 82, 82, 0.8);
     text-decoration: none;
 }
-.site-header a:hover {
+.site-header a:hover,
+.site-footer a:hover {
     color: rgb(146, 215, 223);
 }
 
@@ -291,11 +293,18 @@ header.site-header {
    display: block;
    padding: .5em 1.5em;
 }
+
 /* SITE MAIN (Main Content Area) */
- .main-page li a  { list-style: none;} 
- main.main-page {
-     background: white;
- }
+main.site-main {
+    background: lightgray;
+}
+.site-main p {
+  margin: 0 auto;
+}
+.hero h1 {
+    display: flex;
+    justify-content: center;
+}
 
 
 
