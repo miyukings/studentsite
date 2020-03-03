@@ -212,7 +212,9 @@ section, aside {
 .page-sub main {
     background-color: white;
     color: rgba(0,0,0,0.8);
-
+}
+main.site-main ul {
+    list-style: none;
 }
 
  /* SIMPLE WEB SITE */
