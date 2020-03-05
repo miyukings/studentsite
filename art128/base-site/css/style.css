@@ -106,7 +106,7 @@ img {
 .button,button {
     font-size: 1em;
     display: inline-block;
-    background-color:rgb(48, 45, 44);
+    background-color:rgb(88, 70, 64);
     color: white;
     padding: 1em 2em;
     border-radius: 2em;
@@ -114,26 +114,24 @@ img {
     letter-spacing: .05em;
     line-height: 1;
     text-align: center;
+    margin-top: 1em;
 }
-/* button h4 {
-    font-family: cora, sans-serif;
-    border-radius: 2em;
-  
-} */
+
 .button:hover, button:hover {
-    color: rgb(146, 215, 223);
-background-color:rgb(48, 45, 44);
+color: rgb(146, 215, 223);
+background-color:rgb(88, 70, 64);
 text-decoration: none;
 }
 .button.alt {
     background-color: transparent;
-    color:rgb(39, 23, 20);
-    border: 1px solid rgb(39, 23, 20);
+    color:rgb(88, 70, 64);
+    border: 1.5px solid rgb(88, 70, 64);
+    font-size: .95em;
 }
 .button.alt:hover {
     color: rgb(146, 215, 223);
     background-color: transparent;
-    border: 1px solid rgb(39, 23, 20);
+    border: 1.5px solid rgb(39, 23, 20);
     }
 
 /* BASE LAYOUT */
@@ -165,7 +163,7 @@ body {
   /* FOR EXTRA-LARGE-SIZE SCREEENS/DESKTOP MONITORS */
 @media (min-width:1200px) {
     body { font-size: 112.5%; }
-        .container { max-width: 1000px; }
+        .container { max-width: 1200px; }
 }
 
 /* GRID SYSTEM */
@@ -324,6 +322,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+padding-left: 5%;
 }
 
 
