@@ -346,6 +346,8 @@ header.site-header {
     left: auto;
     display: block;
     margin-top: 1em;
+    /* transition: all .5s ease;  */
+  
 }
 .toggle-nav.expanded .site-nav a {
    background: rgb(88, 70, 64);
@@ -357,6 +359,17 @@ header.site-header {
 .toggle-nav.expanded .site-nav a:hover {
     background:rgb(27, 22, 20) ;
 }
+
+/*  ANIMATION THE TOGGLE NAV */
+.toggle-nav .site-nav ul {
+    transition: all 1s ease;
+    max-height: 0;
+}
+.toggle-nav.expanded .site-nav ul {
+    /* transition: all 1s ease; */
+    max-height: 400px;
+}
+
 
 /* NAVICON */
 .navicon {
@@ -374,7 +387,7 @@ header.site-header {
 .expanded .navicon::after {
     content: "\2715";
     transform: rotate(-90deg);
-    transition: transform .4s ease-out;
+    transition: all .4s ease-out;
 }
 
 /* SITE MAIN (Main Content Area) */
