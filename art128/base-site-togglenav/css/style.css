@@ -299,14 +299,14 @@ header.site-header {
 }
 .site-nav a {
    display: block;
-   padding: .5em 1.5em;
+   padding: .5em 1em;
 }
 
 /* MENU BUTTON */
 .menu-button {
     position: absolute;
     left: -9999px;
-    padding: .5em 1.5em;
+    padding: .5em;
 }
 .menu-button:hover {
   cursor: pointer;
@@ -333,28 +333,14 @@ header.site-header {
     text-align: center;
 }
 
-.toggle-nav .site-nav ul {
-    position: absolute;
-    left: -9999px; 
-}
 /* HIDE NAV ON SMALL SCREEN BY DEFAULT */
 .toggle-nav .site-nav ul {
     position: absolute;
     left: -9999px;
 }
-.toggle-nav.expanded .site-nav a {
-    background: rgba(0,51,102,1);
-    color: rgba(255,255,255,1);
-    margin: .5em 0;
-    padding: 1em;
- }
-
-.toggle-nav.expanded .site-nav a:hover {
-   background: rgba(0,0,51,1);
-}
 
 
-/* SHOW NAV ON WHEN EXPANDED CLASS IS TOGGLE */
+/* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLE */
 .toggle-nav.expanded .site-nav ul {
     position: static;
     left: auto;
@@ -362,11 +348,14 @@ header.site-header {
     margin-top: 1em;
 }
 .toggle-nav.expanded .site-nav a {
-   background: rgba(0,0,51,1);
-  color: rgba(255,255,255,1);
+   background: rgb(88, 70, 64);
+  color: rgba(255, 255, 255, 1);
     margin: .5em 0;
     padding: 1em;
     }
+}
+.toggle-nav.expanded .site-nav a:hover {
+    background:rgb(27, 22, 20) ;
 }
 
 /* NAVICON */
@@ -379,17 +368,14 @@ header.site-header {
     content: "\2630";
     color: rgba(0,0,0,1);
     display: inline-block;
- font-size: 1.5em;
-transform: rotate(0deg);
+    font-size: 1.5em;
+    transform: rotate(0deg);
 }
 .expanded .navicon::after {
     content: "\2715";
     transform: rotate(-90deg);
     transition: transform .4s ease-out;
 }
-
-
-
 
 /* SITE MAIN (Main Content Area) */
 
@@ -398,26 +384,24 @@ transform: rotate(0deg);
 section {
     padding: 4em 0;
 }
+
 .hero {
     text-align: center;
     background: rgba(0,0,0,.1);
+    padding: 6em 1em;
 }
 
 .hero h2 {
     font-size: 3em;
     line-height: 1;
 }
+
 .hero p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-padding-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 5%;
 }
-
-
-
-
-
 
 
 
