@@ -41,7 +41,7 @@ CSS TABLE OF CONTENTS
 
 /* TYPOGRAPHY */
 body {
-    font-family: cora, sans-serif;
+    font-family: miller-banner, serif;
     font-size: 100%; /* This sets the value of 1em */
     line-height: 1.4;
     color: rgb(82, 81, 81);
@@ -52,7 +52,7 @@ body {
  h1, h2, h3, h4, h5, h6 {
      margin: .5em 0;
     font-weight: normal;
-    font-family: miller-banner, serif;
+    font-family: cora, sans-serif;
 }
 
 h1 {
@@ -84,9 +84,14 @@ p {
 }
 
 /* TYPE SPECIMEN */
-
+h1.headline {
+    font-family: miller-banner, serif;
+   
+}
 .headline {
     font-size: 4em;
+    font-weight: bold;
+   
 }
 .subheadline {
     font-size: 2em;
@@ -115,7 +120,7 @@ a:hover {
 
 /* HELPERS */
 @media(min-width:768px){
-.hideonelarge {
+.hideonlarge {
     visibility: hidden;
 }
 }
@@ -127,6 +132,7 @@ img {
 
 /* BUTTON */
 .button,button {
+    font-family: cora, sans-serif;
     font-size: 1em;
     display: inline-block;
     background-color:rgb(88, 70, 64);
@@ -428,15 +434,16 @@ section {
 }
 
 .hero h2 {
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1;
+    text-transform: uppercase;
    
 }
 
 .hero p {
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
     padding-left: 5%;
 }
 
@@ -462,6 +469,14 @@ margin: 0 .1em 0 0;
 padding: 0;
 display: block;
 }
+
+blockquote{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+}
+
 label, input {
     display: block;
 }
