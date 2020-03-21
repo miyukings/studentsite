@@ -274,6 +274,7 @@ body.demo::before {
 /* SITE HEADER */
 header.site-header {
     margin: 0 2em;
+    font-family: cora, sans-serif;
 }
 
 .site-header {
@@ -301,6 +302,7 @@ header.site-header {
 /* SITE FOOTER */
 .site-footer {
   padding: 1em .5em 2em .5em; 
+  font-family: cora, sans-serif;
 } 
 
 /* SITE ID (LOGO) */
