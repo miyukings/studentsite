@@ -101,6 +101,7 @@ h1.headline {
 }
 .date {
     font-style: italic;
+    color: rgba(0,0,0,.5);
 
 }
 
@@ -131,7 +132,7 @@ img {
 }
 
 /* BUTTON */
-.button,button {
+.button,button,input[type="submit"] {
     font-family: cora, sans-serif;
     font-size: 1em;
     display: inline-block;
@@ -146,9 +147,9 @@ img {
     margin-top: 1em;
 }
 
-.button:hover, button:hover {
+.button:hover,button:hover,input[type="submit"]:hover {
 color: rgb(146, 215, 223);
-background-color:rgb(88, 70, 64);
+background:rgb(27, 22, 20) ;
 text-decoration: none;
 }
 .button.alt {
@@ -437,9 +438,7 @@ section {
 
 .hero h2 {
     font-size: 4em;
-    line-height: 1;
-    text-transform: uppercase;
-   
+    line-height: 1; 
 }
 
 .hero p {
@@ -462,15 +461,20 @@ article {
     margin-right: auto;
 }
 article .date + p::first-letter {
-color: black;
-font-size: 6em;
-line-height: 1;
+color: rgba(0,0,0,.8);
+font-size: 5.6em;
+line-height: .9;
 font-weight: bold;
 float: left;
-margin: 0 .1em 0 0;
+margin: 0 .2em 0 0;
 padding: 0;
 display: block;
 }
+article .date + p::first-line {
+    color: rgba(0,0,0,.8);
+   text-transform: uppercase;
+   font-weight: bold;
+    }
 
 blockquote{
     font-size: 1.5em;
@@ -484,6 +488,22 @@ label, input {
 }
 label, input[type="text"],textarea {
    width: 100%;
+}
+input, textarea {
+    background-color: rgba(0, 0, 0, .05);
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 1em;
+    font-size: inherit;
+}
+label {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+input[type="text"] {
+    margin-top: 1em;
+}
+#contactinfo a {
+    color:rgb(146, 215, 223);
 }
 
 /* -------------------------- */
