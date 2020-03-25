@@ -17,18 +17,19 @@
 
 </head>
 
-<body id="top">
+<body>
 
-    <header class="site-header toggle-nav animated sticky">
+    <header class="site-header toggle-nav sticky">
         <div class="container">
             <div class="site-id">
-                <h1><a href="../../index.html">Base Site | Single Page</a></h1>
+                <h1><a href="../../index.html">MS | BS-Single Page</a></h1>
+
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu </div>
 
                 <ul>
-                    <li><a class="scroll" href="#top">Home</a></li>
+                    <li><a class="scroll" href="#home">Home</a></li>
                     <li><a class="scroll" href="#about">About</a></li>
                     <li><a class="scroll" href="#contact">Contact</a></li>
 
@@ -37,19 +38,20 @@
         </div>
     </header>
 
-    <main class="site-main">
+    <main id="home" class="site-main">
 
         <section class="hero">
             <div class="container">
                 <h2>This is a Hero&nbsp;Section</h2>
-                <p>Thi is the Hero Section on the top of a single page web&nbsp;site.</p>
+                <p>Thi is the top "Hero" section of a single-page site. Content sections at the top of single-page sites
+                    closely resemble the hone pages of multi-page &nbsp;sites.</p>
 
-                <a href="#about" class="button scroll">About Us</a>
-                <a href="#contact" class="button alt scroll"> Contact Us</a>
+                <a href="#about" class="scroll button">About Us</a>
+                <a href="#contact" class="scroll button alt"> Contact Us</a>
             </div>
         </section>
 
-        <section>
+        <section id="features">
             <div class="container">
                 <div class="row">
                     <div class="column one-third">
@@ -58,34 +60,34 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum sint, molestias
                             explicabo fugit sit eaque.
                         </p>
-                        <a href="#" class="button">About Us</a>
+                        <a href="#about" class="scroll button">About Us</a>
                     </div>
                     <div class="column one-third">
                         <img src="img/jerusalem.png" alt="Jerusalem">
-                        <h3>Heading 3</h3>
+                        <h3>Contact Info</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum sint, molestias
                             tenetur, explicabo fugit sit eaque.
                         </p>
-                        <a href="#" class="button">Button</a>
+                        <a href="#contact" class="scroll button">Get in Touch</a>
                     </div>
                     <div class="column one-third">
                         <img src="img/jerusalem.png" alt="Jerusalem">
-                        <h3>Contact Us</h3>
+                        <h3>Directions</h3>
                         <p>We'd love to hear from you. Call us! Email us! Reach out on social media. We're here
                             for&nbsp;you.
 
                         </p>
-                        <a href="contact.html" class="button">Get in Touch</a>
+                        <a href="#map" class="scroll button">View Map</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <div class="container">
-                <h3 class="section-title">About Us</h3>
+        <section id="about" class="subsection">
+            <h2 class="sectionhead">About Us</h2>
+            <article>
+                <div class="container">
 
-                <article>
                     <h1 class="headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 
                     <h2 class="subheadline">
@@ -237,27 +239,46 @@
                         sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar
                         leo.
                     </p>
-                </article>
-            </div>
-
+                </div>
+            </article>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="subsection">
+            <h2 class="sectionhead">Contact Us</h2>
+
             <div class="container">
-                <h3 class="section-title">Contact</h3>
+                <div id="map">
+                    <img src="img/kcc-map.jpg" alt="Map">
+                </div>
 
-                <form action="#">
-                    <label for="yourname">Your Name</label>
-                    <input type="text" id="yourname" name="yourname" />
+                <div class="row">
+                    <div class="column one-half centered">
+                        <address>
+                            4303 Diamond Head road<br />
+                            Honolulu, HI<br />
+                            96814
+                        </address>
+                        <a href="tel:808-123-4567">808-123-4567</a>
 
-                    <label for="youremail">Your Email</label>
-                    <input type="text" id="youremail" name="youremailname" />
+                    </div>
+                </div>
 
-                    <label for="yourmessage">Your Message</label>
-                    <textarea name="yourmessage" id="yourmessage" cols="30" rows="10">
-                        </textarea>
-                    <input type="submit" value="Submit">
-                </form>
+                <div class="row">
+                    <div class="column one-half centered">
+                        <form>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="yourname" name="yourname" />
+
+                            <label for="youremail">Your Email</label>
+                            <input type="text" id="youremail" name="youremail" />
+
+                            <label for="yourmessage">Your Message</label>
+                            <input type="text" id="youremail" name="youremail" />
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -265,15 +286,15 @@
 
 
     <footer class="site-footer">
-        <div class="container">
-            <nav class="site-nav">
-                <ul>
-                    <li><a class="scroll" href="#top">Home</a></li>
-                    <li><a class="scroll" href="#about">About</a></li>
-                    <li><a class="scroll" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a class="scroll" href="#home">Home</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
     </footer>
     <!-- SCROLL JS FILE -->
     <script src="js/scroll.js"></script>

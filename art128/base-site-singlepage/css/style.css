@@ -91,7 +91,6 @@ h1.headline {
 .headline {
     font-size: 4em;
     font-weight: bold;
-   
 }
 .subheadline {
     font-size: 2em;
@@ -117,6 +116,14 @@ a {
 a:hover {
     text-decoration: none;
     color:pink;
+}
+
+/* BLOCKQUOTES */
+blockquote{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 /* HELPERS */
@@ -180,7 +187,7 @@ body {
 }
 
 /* MEDIA QUERES */
-  /* FOR MID-SIZE SCREEENS/TABLETS */
+  /* FOR MID-SIZE SCREEENS/TABLETS  (and Larger) */
 @media (min-width:768px) {  
 }
 
@@ -188,14 +195,12 @@ body {
 @media (min-width:1000px) {
    body { font-size: 100%; }
         .container { max-width: 1000px; }
-      
     }
     
   /* FOR EXTRA-LARGE-SIZE SCREEENS/DESKTOP MONITORS */
 @media (min-width:1200px) {
     body { font-size: 112.5%; }
-        .container { max-width: 1200px; }
-       
+        .container { max-width: 1200px; }   
 }
 
 /* GRID SYSTEM */
@@ -234,44 +239,6 @@ body {
     }
 }
 
-
-
-/* FOR LAYOUT DEMO */
-body.demo::before {
-    background: red;
-    content: "Small Screen ( 0 - 767px)";
-    display: block;
-    color: white;
-    text-align: center;
-    padding: .2em;
-    font-size: .8em;
-}
-
-
-@media (min-width:768px) {
-    /* FOR MID-SIZE SCREEENS/TABLETS */
-    body.demo::before { 
-        background: blue;
-        content: "Mid Screen ( 768 - 999px)";
-    }
-}
-
-@media (min-width:1000px) {
-    /* FOR LARGE-SIZED SCREEENS/LAPTOPS */
-    body.demo::before { 
-        background: green;
-        content: "Large Screen ( 1000 - 1199px)";
-    }
-}
-
-@media (min-width:1200px) {
-    /* FOR EXTRA-LARGE-SIZE SCREEENS/DESCTOP MONITORS */
-    body.demo::before { 
-        background: purple;
-        content: "EX-Large Screen ( 1200px + )";
-    }
-}
-
 /* SITE STURCTURE */
 
 /* SITE HEADER */
@@ -281,13 +248,12 @@ header.site-header {
 }
 
 .site-header {
-    padding: 1em .5em 2em .5em; 
-   
+    padding: 1em .5em; 
 }
 
 
 @media (min-width: 768px) {
-    header.site-header .container {
+    .site-header .container {
         display: flex;
         justify-content: space-between;   
     }
@@ -302,6 +268,7 @@ header.site-header {
 .site-footer a:hover {
     color: rgb(146, 215, 223);
 }
+
 /* SITE FOOTER */
 .site-footer {
   padding: 1em .5em 2em .5em; 
@@ -313,11 +280,25 @@ header.site-header {
      font-size: 1.5em;
      margin: 0;
      text-align: center;
+     font-weight: normal;
 }
 .site-id a {
     display: inline-block;
     padding: .25em 0;
+    font-weight: bold;
 }
+
+/* STICKY header with a class="stciky" on .site-header */
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: white;
+}
+ .site-header.sticky + .site-main {
+     padding-top: 3em;
+ }
 
 
 /* SITE NAV (Primary Top Nav) */
@@ -353,9 +334,10 @@ header.site-header {
 /* TOGGLE NAV */
 @media (max-width: 767px) {
 
-  .toggle-nav .site-id h1 {
+.toggle-nav .site-id h1 {
        text-align: left;
     }
+
 .toggle-nav .menu-button {
     position: absolute;
     left: auto;
@@ -371,25 +353,22 @@ header.site-header {
 .toggle-nav .site-nav ul {
     position: absolute;
     left: -9999px;
+    margin-top: 1em;
 }
-
 
 /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLE */
 .toggle-nav.expanded .site-nav ul {
     position: static;
     left: auto;
-    display: block;
-    margin-top: 1em;
-    /* transition: all .5s ease;  */
-  
+    display: block; 
 }
 .toggle-nav.expanded .site-nav a {
-   background: rgb(88, 70, 64);
-  color: rgba(255, 255, 255, 1);
+    background: rgb(88, 70, 64);
+    color: rgba(255, 255, 255, 1);
     margin: .5em 0;
     padding: 1em;
     }
-}
+
 .toggle-nav.expanded .site-nav a:hover {
     background:rgb(27, 22, 20) ;
 }
@@ -400,10 +379,9 @@ header.site-header {
     max-height: 0;
 }
 .toggle-nav.expanded .site-nav ul {
-    /* transition: all 1s ease; */
     max-height: 400px;
 }
-
+}
 
 /* NAVICON */
 .navicon {
@@ -430,8 +408,16 @@ header.site-header {
 /* SECTION */
 section {
     padding: 4em 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+section:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+section:last-child {
+    padding-bottom: 10em;
 }
 
+/* HERO SECTION */
 .hero {
     text-align: center;
     background: rgba(0,0,0,.1);
@@ -439,25 +425,34 @@ section {
 }
 
 .hero h2 {
-    font-size: 4em;
-    line-height: 1;
-   
-   
+    font-size: 3em;
+    line-height: 1; 
 }
 
 .hero p {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* SUB-SECTION */
+.subsection {
+    padding: 1em 0 1em 0;
+}
+.sectionhead {
+    padding-top: 3em;
+    margin-bottom: 3em;
     text-align: center;
-    padding-left: 5%;
+}
+.sectionhead:after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: .15em solid rgba(0, 0, 0, 0.1);
+    margin: 0.5em auto;
 }
 
 /* ARTICLE */
-.hero p {
-    margin-left: auto;
-    margin-right: auto;
 
-}
 article {
     padding: 4em 0;
     max-width: 800px;
@@ -480,71 +475,49 @@ article .date + p::first-line {
    font-weight: bold;
     }
 
-blockquote{
-    font-size: 1.5em;
-    line-height: 1.2em;
-    font-style: italic;
-    font-weight: bolder;
-}
 
-/* CONTACT FORM */
+
+/* ADDRESS */
+address {
+    margin: 1em 0;
+}
+/* MAP */
+#map {
+   max-width: 1000px;
+margin: 0 auto;
+}
+/* FORMS */
 form {
-    max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
+    padding: 0; 
 }
 
-label, input {
-    display: block;
-}
-label, input[type="text"],textarea {
+label, input[type="text"], textarea {
    width: 100%;
-}
-input, textarea {
-    background-color: rgba(0, 0, 0, .05);
-    border: 1px solid rgba(0, 0, 0, .2);
-    padding: 1em;
-    font-size: inherit;
+   display: block;
 }
 label {
     margin-top: 1em;
     margin-bottom: .5em;
 }
-input[type="text"] {
-    margin-top: 1em;
+input, textarea {
+    background-color: rgba(0, 0, 0, .05);
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 1em;
+}
+
+input[type="submit"] {
+    margin-top: 1.5em;
 }
 
 
-#contactinfo a {
-    color:rgb(146, 215, 223);
+#contact a {
+    color:rgb(27, 22, 20);
+}
+#contact a:hover {
+   color:rgb(194, 47, 140);
 }
 
-/* CUSTOM SITE CSS */
-.section-title {
-    text-align: center;
-}
-.section-title::after {
-    content: "";
-    display: block;
-    width: 100px;
-    margin: .5em auto;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-}
 
-.site-header.sticky {
-    position: fixed;
-    width: 100%;
-    background: white;
-}
- .site-header.sticky + main {
-     padding-top: 3em;
- }
-#about {
-    background: rgba(0,0,0,0.05);
-}
-#contact {
-    background: rgba(0,0,0,0.1);
-}
 
 /* -------------------------- */
 /* -------------------------- */
