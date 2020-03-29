@@ -113,9 +113,16 @@ min-height: 100vh;
 display: block;
 padding: 0.5em 0.75em;
 }
+
+/* ART 128 PAGE */
 .site-main {
-    background-color: white;
-}
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
 main {
     flex-grow: 1;
 }
@@ -212,6 +219,7 @@ section, aside {
 .page-sub main {
     background-color: white;
     color: rgba(0,0,0,0.8);
+    
 }
 main.site-main ul {
     list-style: none;
