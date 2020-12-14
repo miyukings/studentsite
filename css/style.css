@@ -11,7 +11,7 @@ body {
 body  {
     background: rgb(252, 2, 127); 
     background-image: linear-gradient(to bottom,#f801ba, #fa90e3 ); 
-    color: rgb(58, 58, 58); 
+    /* color: rgb(58, 58, 58);  */
     /* background: rgba(0,0,0,1); */
     /* color: #fff; */
   }
@@ -22,15 +22,22 @@ body  {
 /* GLOVAL TYPOGRAPHY */
 
 body {
-    font-family: cora, sans-serif;
+    font-family: "roboto", sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
+}
 
+h1.a-style {
+    font-family: 'Righteous', cursive;
 }
- h2, h3, h4 {
+ h1, h2, h3, h4 {
     font-weight: nomal;
-    font-family: miller-banner, serif;
+    font-family: "cora", sans-serif;;
 }
+h2 {
+    color: rgb(58, 58, 58); 
+}
+
 a {
     text-decoration: none;
     color: gray;
@@ -41,6 +48,8 @@ a:hover {
 }
 p {
     max-width: 35em;
+    font-family: "source-serif-pro", serif;
+    font-size: 1.2em;
 }
 
 dt {
@@ -142,8 +151,14 @@ color: rgba(255, 255, 255, 1);
 
 /* SECTIONS */
 section, aside {
-    padding: 2em 1em;
+    padding: 1em;
 }
+aside ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 45%;
+}
+
 
 /* HERO */
 .hero {
@@ -153,7 +168,7 @@ section, aside {
     text-align: center;
     padding: 2em 1em 4em 1em;
 }
-.hero h1, .hero h2 {
+.hero h1 {
     font-size: 4em;
     line-height: 1;
     margin: 0;
@@ -169,16 +184,6 @@ section, aside {
     font-weight: normal;
     color: rgba(255, 255, 255, 1);
     margin: 1em 0;
-}
-
-/* PORTFOLIO HERO */
-
- .hero.intro blockquote {
-    font-size: 1.5em;
-    color: red;
-}
-h2.intro span {
-    font-style: italic;
 }
 
 
@@ -265,6 +270,12 @@ main.site-main ul {
 }
 
 /* PAGE SUB */
-.hero h3 {
+.page-sub .hero h3 {
     font-size: 2em;
+}
+
+/* PAGE PORTFOLIO */
+
+body.page-portfolio h2.sectionhead {
+    color: white;
 }
