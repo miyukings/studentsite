@@ -41,10 +41,11 @@ CSS TABLE OF CONTENTS
 
 /* TYPOGRAPHY */
 body {
-    font-family: miller-banner, serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 100%; /* This sets the value of 1em */
     line-height: 1.4;
-    color: rgb(82, 81, 81);
+    color: white;
+    /* color: rgb(82, 81, 81); */
     background-color: black;
 }
 
@@ -53,7 +54,8 @@ body {
  h1, h2, h3, h4, h5, h6 {
      margin: .5em 0;
     font-weight: normal;
-    font-family: cora, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 h1 {
@@ -81,14 +83,14 @@ h6 {
 
 /* PARAGRAPHS */
 p {
-    max-width: 35em; 
+    max-width: 35em;
 }
 
 /* TYPE SPECIMEN */
 h1.headline {
-    font-family: miller-banner, serif;
-   
+    font-family: 'Roboto', sans-serif; 
 }
+
 .headline {
     font-size: 4em;
     font-weight: bold;
@@ -102,12 +104,19 @@ h1.headline {
 .date {
     font-style: italic;
     color: rgba(0,0,0,.5);
+}
 
+#assets h3 {
+    padding-top: 2.5em;
+}
+
+#assets h3::before {
+    padding-top: 0em;
 }
 
 /* LINKS */
 h1 {
-    font-family: cora, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -141,7 +150,7 @@ img {
 
 /* BUTTON */
 .button,button,input[type="submit"] {
-    font-family: cora, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     display: inline-block;
     background-color:rgb(88, 70, 64);
@@ -245,7 +254,7 @@ body {
 /* SITE HEADER */
 header.site-header {
     margin: 0;
-    font-family: cora, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .site-header {
@@ -273,7 +282,7 @@ header.site-header {
 /* SITE FOOTER */
 .site-footer {
   padding: 1em .5em 2em .5em; 
-  font-family: cora, sans-serif;
+  font-family: 'Roboto', sans-serif;
 } 
 
 /* SITE ID (LOGO) */
@@ -422,26 +431,28 @@ section:last-child {
 .hero {
     text-align: center;
     background: rgba(0,0,0);
-    padding: 6em 1em;
+    padding: 10em 1em;
 }
 
 .hero h2 {
     font-size: 3em;
     line-height: 1; 
+    color: white;
 }
 
 .hero p {
     margin-left: auto;
     margin-right: auto;
+    padding: 1em 0;
 }
 
 /* SUB-SECTION */
 .subsection {
-    padding: 1em 0 1em 0;
+    /* padding: 1em 0 1em 0; */
 }
 .sectionhead {
-    padding-top: 3em;
-    margin-bottom: 3em;
+    /* padding-top: 3em;
+    margin-bottom: 3em; */
     text-align: center;
 }
 .sectionhead:after {

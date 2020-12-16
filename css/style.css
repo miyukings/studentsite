@@ -32,7 +32,7 @@ h1.a-style {
 }
  h1, h2, h3, h4 {
     font-weight: nomal;
-    font-family: "cora", sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 h2 {
     color: rgb(58, 58, 58); 
@@ -71,6 +71,7 @@ img {
 
 /* -------------SITE STRUCTURAL STYLES -------------- */
 body {
+
 color: rgba (255, 255, 255, 1);
 display: flex;
 flex-direction: column;
@@ -276,6 +277,16 @@ main.site-main ul {
 
 /* PAGE PORTFOLIO */
 
-body.page-portfolio h2.sectionhead {
-    color: white;
+#entry .subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
 }
