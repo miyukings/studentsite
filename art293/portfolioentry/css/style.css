@@ -610,6 +610,19 @@ body.demo::before {
   }  */
 
 
+  /* NMA SECTION */
+video {
+    justify-content: center;
+    margin: 100px auto;
+}
+
+/* ASSETS SECTION */
+#assets h3 img {
+    margin: 0 50px;
+}
+#assets .container {
+    width: 1000px;
+}
 
 
 
