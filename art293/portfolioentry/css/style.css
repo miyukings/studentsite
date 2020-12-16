@@ -447,9 +447,9 @@ section:last-child {
 }
 
 /* SUB-SECTION */
-.subsection {
-    /* padding: 1em 0 1em 0; */
-}
+/* .subsection {
+    padding: 1em 0 1em 0;
+} */
 .sectionhead {
     /* padding-top: 3em;
     margin-bottom: 3em; */
@@ -608,6 +608,8 @@ body.demo::before {
     background-color: rgb(255, 255, 0, 0.4);
     box-shadow: 0 0 0 3px inset rgba(255, 255, 0, 1);
   }  */
+
+
 
 
 
